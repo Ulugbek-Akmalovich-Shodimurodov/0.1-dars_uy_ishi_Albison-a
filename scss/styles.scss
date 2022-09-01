@@ -1,0 +1,240 @@
+@import "./variables";
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'cormorant', "Arial", sans-serif;
+    background-color: #fff;
+    color: #222;
+}
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.header-navbar{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 1296px;
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba($color: #555, $alpha: 0.5);
+}
+
+.nav-logo{
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+}
+
+.nav-list{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+.nav-list__item{
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px;
+    color: $main-color;
+    font-family:'cormorant',  "Arial", sans-serif;
+}
+.nav-list__item:hover{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background: $main-bg-color;
+    color: $main-color;
+}
+
+.language-list{
+    list-style: none;
+}
+.language-item{
+    margin: 0 0 0 10px ;
+}
+
+.site-body{
+    position: relative;
+    margin-top: 100px;
+    font-family:'cormorant',  "Arial", sans-serif;
+  }
+.caruosel-img{
+    width: 100%;
+    height: 600px;
+}
+
+.caruosel-color{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    z-index:10;
+    color: #000;
+    background: rgba($color: #000000, $alpha: 0.5);
+}
+
+.home-page-title{
+    z-index: 11;
+    width: 600px;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    text-align: end;
+    margin-right: auto;
+}
+.title-text{
+    font-size: 64px ;
+    line-height: 96px;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+.home-page-title { 
+    p{
+        
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 44px;
+        color: #fff;
+}
+}
+.home-page__button{
+    width: 150px;
+    height: 64px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    border: none;
+    text-transform: uppercase;
+    background: $main-bg-color;
+    color: $main-color;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.bariartic-surgery__section{
+    width: 1296px;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $main-bg-color;
+}
+
+.bariartic-surgery__title{
+    font-family: 'cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-color;
+}
+.bariartic-surgery__line{
+
+    width: 100px;
+    padding: 3px;
+
+    opacity: 1;
+    text-align: center;
+
+    background: $main-color;
+    color: $main-color;
+
+}
+.card__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+
+}
+.bariartic-surgery__card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bariartic-surgery__card-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.card__text{
+    position: absolute;
+    bottom: 30px;
+    width: 270px;
+    height: 88px;
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: $main-color;
+    color: $main-bg-color;
+}
+
