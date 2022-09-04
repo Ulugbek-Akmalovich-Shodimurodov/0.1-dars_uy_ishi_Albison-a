@@ -658,6 +658,10 @@ height: 420px;
         // text-align: end;
         // margin-right: auto;
     }
+    .caruosel-img{
+        width: 100vw;
+        height: 50vh;
+    }
 }
 @media only screen and(max-width: 600px) {
 
@@ -671,6 +675,10 @@ height: 420px;
         // right: 200px;
         // text-align: end;
         // margin-right: auto;
+    }
+    .caruosel-img{
+        width: 100vw;
+        height: 40vh;
     }
 }
 @media only screen and(max-width: 500px) {
