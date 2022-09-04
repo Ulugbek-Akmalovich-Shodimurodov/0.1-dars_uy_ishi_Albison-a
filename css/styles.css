@@ -632,49 +632,49 @@ li {
 }
 @media only screen and (max-width: 1000px) {
   .home-page-title {
-    top: 70px;
+    top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 900px) {
   .home-page-title {
-    top: 60px;
+    top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 800px) {
   .home-page-title {
-    top: 60px;
+    top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 700px) {
   .home-page-title {
-    top: 60px;
+    top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 600px) {
   .home-page-title {
-    top: 50px;
+    top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 500px) {
   .home-page-title {
-    top: 40px;
+    top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 400px) {
   .home-page-title {
-    top: 30px;
+    top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 300px) {
   .home-page-title {
-    top: 20px;
+    top: 0px;
     right: 13%;
   }
 }/*# sourceMappingURL=styles.css.map */
