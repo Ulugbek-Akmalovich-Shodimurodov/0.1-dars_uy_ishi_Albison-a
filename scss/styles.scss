@@ -202,7 +202,7 @@ li{
 }
 
 .bariartic-surgery__title{
-    width: 800px;
+    width: 70%;
     font-family: 'cormorant';
     font-style: normal;
     font-weight: 700;
@@ -226,6 +226,7 @@ li{
 }
 .card__list{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 30px;
@@ -297,12 +298,13 @@ li{
 
 .relevant-news__list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     padding: 50px 150px;
 }
 .relevant-news__text{
-    width: 600px;
+    width: 80%;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -312,6 +314,7 @@ li{
 .relevant-news__card{
     width: 300px;
     height: 400px;
+    margin: 20px;
     -webkit-box-shadow: -1px 2px 35px -6px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: -1px 2px 35px -6px rgba(34, 60, 80, 0.2);
     box-shadow: -1px 2px 35px -6px rgba(34, 60, 80, 0.2);
@@ -335,11 +338,14 @@ li{
 .recommendations-section{
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
     padding: 80px 100px;
+    margin: 20px;
 }
 .recommendations__img{
-    width: 320px;
-height: 420px;
+    width: 300px;
+    height: 420px;
 }
 .partners-section{
     width: 100%;
@@ -358,15 +364,20 @@ height: 420px;
 .contact-us__section{
     width: 100%;
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 .registration-section{
     width: 100%;
+    padding-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    
     background:  #FAFAFA;
 }
 .contact-section{
@@ -494,12 +505,14 @@ height: 420px;
     width: 80%;
     padding-top: 30px ;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-decoration: none;
 }
 .menu-contact{
     width: 220px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     text-decoration: none;
 }
@@ -549,6 +562,7 @@ height: 420px;
     width: 80%;
 }
 .massenger__list{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -557,7 +571,6 @@ height: 420px;
 .massenger-list__item{
     display: flex;
     align-items: center;
-    justify-content: center;
     a{
 
         color: $main-bg-color;
@@ -591,12 +604,28 @@ height: 420px;
     background: transparent;
 }  
 @media only screen and (max-width: 1200px) {
-    // .nav-list{
-    //     display: none;
-    // }  
+    .nav-list{
+        display: none;
+    }  
     .burger{
         display: block;
     }  
+    .menu-contact{
+        flex-direction: row;
+    }
+
+    .footer-menu__list_item {
+        display: block;
+        width: 50% !important;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .massenger-list__item {
+        width: 30%;
+        text-align: left;
+        margin: 10px;
+    }
+
 
 
 
@@ -645,7 +674,7 @@ height: 420px;
         // margin-right: auto;
     }
 }
-@media only screen and(max-width: 700px) {
+@media only screen and(max-width: 768px) {
 
     .home-page-title{
         // z-index: 11;
@@ -659,8 +688,11 @@ height: 420px;
         // margin-right: auto;
     }
     .caruosel-img{
-        width: 100vw;
         height: 50vh;
+    }
+    .footer-menu__list_item {
+        width: 100% !important;
+        margin-top: 30px;
     }
 }
 @media only screen and(max-width: 600px) {
@@ -677,7 +709,6 @@ height: 420px;
         // margin-right: auto;
     }
     .caruosel-img{
-        width: 100vw;
         height: 40vh;
     }
 }
