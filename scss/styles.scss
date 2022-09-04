@@ -301,7 +301,7 @@ li{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    padding: 50px 150px;
+    padding: 50px 130px;
 }
 .relevant-news__text{
     width: 80%;
@@ -313,7 +313,7 @@ li{
 }
 .relevant-news__card{
     width: 300px;
-    height: 400px;
+    padding-bottom: 15px;
     margin: 20px;
     -webkit-box-shadow: -1px 2px 35px -6px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: -1px 2px 35px -6px rgba(34, 60, 80, 0.2);
@@ -644,6 +644,12 @@ li{
         // text-align: end;
         // margin-right: auto;
     }
+    .relevant-news__list{
+        padding: 30px 100px;
+    }
+    .relevant-news__card{
+        width: 70%;
+    }
 
 }
 @media only screen and(max-width: 900px) {
@@ -690,6 +696,13 @@ li{
     .caruosel-img{
         height: 50vh;
     }
+    .relevant-news__list{
+        padding: 30px 0;
+    }
+    .relevant-news__card{
+        width: 90%;
+    }
+
     .footer-menu__list_item {
         width: 100% !important;
         margin-top: 30px;
