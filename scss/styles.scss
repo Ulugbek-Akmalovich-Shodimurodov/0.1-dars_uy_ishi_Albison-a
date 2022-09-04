@@ -50,18 +50,23 @@ li{
     overflow: hidden;
 }
 .header-navbar{
+    position: relative;
     z-index: 100;
-    position: fixed;
     top: 0;
-    width: 1296px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 1000px !important;
+    text-align: center;
+}
+.home-navbar{
+    position: fixed;
     height: 100px;
-    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgba($color: #555, $alpha: 0.5);
 }
-
 .nav-logo{
     display: inline-block;
     width: 250px;
@@ -70,6 +75,7 @@ li{
 
 .nav-list{
     padding: 30px 0;
+    margin-left: auto;
     display: flex;
     align-items: center;
     list-style: none;
@@ -101,18 +107,31 @@ li{
 .language-item{
     margin: 0 0 0 10px ;
 }
+.burger{
+    display: none !important;
+}
 
 .site-body{
-    position: relative;
     margin-top: 100px;
+    // width: 100%;
     font-family:'cormorant',  "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+.site__section{
+    width: 100%;
+}
 .caruosel-img{
     width: 100%;
     height: 600px;
 }
-
+.carousel{
+    box-sizing: border-box;
+}
 .caruosel-color{
+    position: relative;
+    display: block;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -127,8 +146,8 @@ li{
     z-index: 11;
     width: 600px;
     position: absolute;
-    top: 100px;
-    right: 200px;
+    top: 25%;
+    right: 13%;
     text-align: end;
     margin-right: auto;
 }
@@ -450,6 +469,11 @@ height: 420px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
+.site-xarita{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 .site-footer{
     position: relative;
     width: 100%;
@@ -461,7 +485,7 @@ height: 420px;
 }
 .menu{
     width: 80%;
-    padding: 30px 0;
+    padding-top: 30px ;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -482,9 +506,11 @@ height: 420px;
         height: 15px;
     }
     span{
-        display: block;
+        display: flex;
         width: 200px;
         margin-left: 5px;
+        margin-top: 10px;
+        color: #F4F4F8 !important;
     }
     
 
@@ -551,5 +577,23 @@ height: 420px;
     position: absolute;
     right: 5px;
     bottom: 5px;
+    
+}
+.burger{
+    display: block;
+    background: transparent;
+}  
+@media only screen and (max-width: 1200px) {
+    .nav-list{
+        display: none;
+    }  
+    .burger{
+        display: block;
+    }  
+    .container{
+        min-width: 1160px;
+    }
+
+
     
 }

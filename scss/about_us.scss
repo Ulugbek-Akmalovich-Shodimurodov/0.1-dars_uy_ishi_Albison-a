@@ -1,0 +1,48 @@
+@import "./variables";
+
+.pages-navbar{
+    position: fixed;
+    display: flex;
+    background: $main-color;
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.pages-nav__item{
+    color: #fff;
+}
+
+.about-main{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/shifokorlar_jamoasi.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f4f4f8;
+}
+
+.about-bariatric{
+    width: 65%;
+    height: 637px;
+    margin-top: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
+}
+.current_page__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.current-page__link-list:nth-child(2n-1)::before{
+    content: '';
+    width: 2px;
+    height: 10px;
+    opacity: 1;
+    background: #000;
+}
