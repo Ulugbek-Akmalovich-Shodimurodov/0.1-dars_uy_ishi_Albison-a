@@ -59,16 +59,14 @@ li {
   width: 100%;
   display: flex;
   justify-content: center;
-  width: 1000px !important;
-  text-align: center;
 }
 
 .home-navbar {
   position: fixed;
   height: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background: rgba(85, 85, 85, 0.5);
 }
 
@@ -158,8 +156,8 @@ li {
   z-index: 11;
   width: 600px;
   position: absolute;
-  top: 25%;
-  right: 13%;
+  top: 120px;
+  right: 200px;
   text-align: end;
   margin-right: auto;
 }
@@ -625,9 +623,6 @@ li {
 }
 
 @media only screen and (max-width: 1200px) {
-  .nav-list {
-    display: none;
-  }
   .burger {
     display: block;
   }

@@ -56,15 +56,15 @@ li{
     width: 100%;
     display: flex;
     justify-content: center;
-    width: 1000px !important;
-    text-align: center;
+
 }
 .home-navbar{
     position: fixed;
     height: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     background: rgba($color: #555, $alpha: 0.5);
 }
 .nav-logo{
@@ -75,6 +75,7 @@ li{
 
 .nav-list{
     padding: 30px 0;
+    // margin-left: 10px;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -113,7 +114,8 @@ li{
 
 .site-body{
     margin-top: 100px;
-    // width: 100%;
+    // width: 1296px;
+    // text-align: center;
     font-family:'cormorant',  "Arial", sans-serif;
     display: flex;
     flex-direction: column;
@@ -146,8 +148,10 @@ li{
     z-index: 11;
     width: 600px;
     position: absolute;
-    top: 25%;
-    right: 13%;
+    // top: 25%;
+    // right: 13%;
+    top: 120px;
+    right: 200px;
     text-align: end;
     margin-right: auto;
 }
@@ -584,9 +588,9 @@ height: 420px;
     background: transparent;
 }  
 @media only screen and (max-width: 1200px) {
-    .nav-list{
-        display: none;
-    }  
+    // .nav-list{
+    //     display: none;
+    // }  
     .burger{
         display: block;
     }  
