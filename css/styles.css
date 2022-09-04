@@ -75,6 +75,7 @@ li {
   display: inline-block;
   width: 250px;
   height: 100px;
+  margin-top: 20px;
 }
 
 .nav-list {
@@ -109,6 +110,7 @@ li {
 
 .language-list {
   list-style: none;
+  display: flex;
 }
 
 .language-item {
@@ -116,6 +118,7 @@ li {
 }
 
 .burger {
+  display: none;
   width: 40px;
   height: 40px;
   margin-right: 30px;
@@ -133,6 +136,278 @@ li {
   width: 100%;
 }
 
+.home-main__carusel {
+  max-width: 1320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-main__carusel-container {
+  position: relative;
+  max-width: 1320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carusel__img {
+  z-index: 99;
+  width: 100%;
+  height: 650px;
+  background-size: contain;
+}
+
+.home-main__carusel-container-box {
+  position: absolute;
+  top: 55px;
+  right: 200px;
+  width: 520px;
+  text-align: right;
+  z-index: 5;
+  color: #000;
+}
+
+.home-main__carusel-container-box-heading {
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 63px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #7F2941;
+}
+
+.home-main__carusel-container-box-desc {
+  margin: 18px 0 0 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: right;
+  color: #7F2941;
+}
+
+.home-main__carusel-container-box-btn {
+  margin: 16px 0 0 0;
+  padding: 10px 20px;
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  border: none;
+  background-color: #AEC5CE;
+  color: #7F2941;
+  border-radius: 24px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .carusel__img {
+    height: 550px;
+  }
+  .home-main__carusel-container-box {
+    top: 52px;
+    right: 180px;
+    width: 480px;
+  }
+  .home-main__carusel-container-box-heading {
+    font-size: 54px;
+    line-height: 57px;
+  }
+  .home-main__carusel-container-box-desc {
+    margin: 18px 0 0 0;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .home-main__carusel-container-box-btn {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .carusel__img {
+    height: 500px;
+  }
+  .home-main__carusel-container-box {
+    top: 50px;
+    right: 145px;
+    width: 420px;
+  }
+  .home-main__carusel-container-box-heading {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .home-main__carusel-container-box-desc {
+    margin: 15px 0 0 0;
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .home-main__carusel-container-box-btn {
+    margin: 14px 0 0 0;
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .carusel__img {
+    height: 410px;
+  }
+  .home-main__carusel-container-box {
+    top: 42px;
+    right: 120px;
+    width: 360px;
+  }
+  .home-main__carusel-container-box-heading {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .home-main__carusel-container-box-desc {
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .home-main__carusel-container-box-btn {
+    margin: 12px 0 0 0;
+    padding: 9px 18px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .carusel__img {
+    height: 360px;
+  }
+  .home-main__carusel-container-box {
+    top: 36px;
+    right: 90px;
+    width: 310px;
+  }
+  .home-main__carusel-container-box-heading {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .home-main__carusel-container-box-desc {
+    margin: 14px 0 0 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .home-main__carusel-container-box-btn {
+    margin: 12px 0 0 0;
+    padding: 7px 16px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .carusel__img {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .carusel__img {
+    height: 260px;
+  }
+  .home-main__carusel-container-box {
+    top: 32px;
+    right: 75px;
+    width: 250px;
+  }
+  .home-main__carusel-container-box-heading {
+    font-size: 32px;
+    line-height: 34px;
+  }
+  .home-main__carusel-container-box-desc {
+    margin: 12px 0 0 0;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .home-main__carusel-container-box-btn {
+    margin: 10px 0 0 0;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .carusel__img {
+    height: 220px;
+  }
+  .home-main__carusel-container-box {
+    top: 28px;
+    right: 50px;
+    width: 230px;
+  }
+  .home-main__carusel-container-box-heading {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .home-main__carusel-container-box-desc {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .home-main__carusel-container-box-btn {
+    margin: 8px 0 0 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .carusel__img {
+    height: 180px;
+  }
+  .home-main__carusel-container-box {
+    top: 24px;
+    right: 35px;
+    width: 200px;
+  }
+  .home-main__carusel-container-box-heading {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .home-main__carusel-container-box-desc {
+    margin: 8px 0 0 0;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .home-main__carusel-container-box-btn {
+    margin: 6px 0 0 0;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+@media only screen and (max-width: 345px) {
+  .carusel__img {
+    height: 150px;
+  }
+  .home-main__carusel-container-box {
+    top: 20px;
+    right: 26px;
+    width: 180px;
+  }
+  .home-main__carusel-container-box-heading {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .home-main__carusel-container-box-desc {
+    margin: 8px 0 0 0;
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .home-main__carusel-container-box-btn {
+    margin: 6px 0 0 0;
+    padding: 4px 8px;
+    font-size: 9px;
+    line-height: 11px;
+  }
+}
 .caruosel-img {
   width: 100vw;
   height: 70vh;
@@ -153,49 +428,6 @@ li {
   z-index: 10;
   color: #000;
   background: rgba(0, 0, 0, 0.5);
-}
-
-.home-page-title {
-  z-index: 11;
-  width: 600px;
-  position: absolute;
-  top: 120px;
-  right: 200px;
-  text-align: end;
-  margin-right: auto;
-}
-
-.title-text {
-  font-size: 64px;
-  line-height: 96px;
-  text-align: right;
-  letter-spacing: -0.02em;
-  color: #fff;
-}
-
-.home-page-title p {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 44px;
-  color: #fff;
-}
-
-.home-page__button {
-  width: 150px;
-  height: 64px;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 44px;
-  letter-spacing: -0.01em;
-  border: none;
-  text-transform: uppercase;
-  background: #AEC5CE;
-  color: #7F2941;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
 }
 
 .bariartic-surgery__section {
@@ -589,6 +821,10 @@ li {
   width: 80%;
 }
 
+.footer-menu__line {
+  width: 50% !important;
+}
+
 .massenger__list {
   width: 100%;
   display: flex;
@@ -597,6 +833,7 @@ li {
 }
 
 .massenger-list__item {
+  width: 16%;
   display: flex;
   align-items: center;
 }
@@ -658,9 +895,9 @@ li {
   }
 }
 @media only screen and (max-width: 1000px) {
-  .home-page-title {
-    top: 0px;
-    right: 13%;
+  .nav-logo {
+    width: 200px;
+    height: 80px;
   }
   .relevant-news__list {
     padding: 30px 100px;
@@ -669,25 +906,12 @@ li {
     width: 70%;
   }
 }
-@media only screen and (max-width: 900px) {
-  .home-page-title {
-    top: 0px;
-    right: 13%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .home-page-title {
-    top: 0px;
-    right: 13%;
-  }
-}
 @media only screen and (max-width: 768px) {
-  .home-page-title {
-    top: 0px;
-    right: 13%;
-  }
   .caruosel-img {
     height: 50vh;
+  }
+  .bariartic-surgery__title {
+    font-size: 34px;
   }
   .relevant-news__list {
     padding: 30px 0;
@@ -699,31 +923,43 @@ li {
     width: 100% !important;
     margin-top: 30px;
   }
+  .massenger-list__item {
+    flex-direction: column !important;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .massenger-list__item img {
+    display: block;
+    text-align: start;
+    margin-left: 0;
+  }
+  .massenger-list__item img a {
+    font-size: 10px;
+  }
 }
 @media only screen and (max-width: 600px) {
-  .home-page-title {
-    top: 0px;
-    right: 13%;
-  }
   .caruosel-img {
     height: 40vh;
   }
 }
 @media only screen and (max-width: 500px) {
-  .home-page-title {
-    top: 0px;
-    right: 13%;
+  .nav-logo {
+    width: 170px;
+    height: 60px;
+    margin-top: 10px;
+  }
+  .site__year {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .home-page-title {
-    top: 0px;
-    right: 13%;
+  .bariartic-surgery__title {
+    font-size: 30px;
   }
-}
-@media only screen and (max-width: 300px) {
-  .home-page-title {
-    top: 0px;
-    right: 13%;
+  .contact__link {
+    margin: 0 10px;
+  }
+  .site__year {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
