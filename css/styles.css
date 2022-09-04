@@ -630,33 +630,51 @@ li {
     min-width: 1160px;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .home-page-title {
+    top: 70px;
+    right: 13%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .home-page-title {
+    top: 60px;
+    right: 13%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home-page-title {
+    top: 60px;
+    right: 13%;
+  }
+}
 @media only screen and (max-width: 700px) {
   .home-page-title {
-    top: 6%;
+    top: 60px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 600px) {
   .home-page-title {
-    top: 5%;
+    top: 50px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 500px) {
   .home-page-title {
-    top: 4%;
+    top: 40px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 400px) {
   .home-page-title {
-    top: 3%;
+    top: 30px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 300px) {
   .home-page-title {
-    top: 2%;
+    top: 20px;
     right: 13%;
   }
 }/*# sourceMappingURL=styles.css.map */
