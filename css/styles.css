@@ -67,6 +67,7 @@ li {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: rgba(85, 85, 85, 0.5);
 }
 
@@ -115,7 +116,9 @@ li {
 }
 
 .burger {
-  display: none !important;
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
 }
 
 .site-body {
@@ -626,77 +629,50 @@ li {
   .burger {
     display: block;
   }
-  .container {
-    min-width: 1160px;
-  }
 }
 @media only screen and (max-width: 1000px) {
-  .container {
-    min-width: 960px;
-  }
   .home-page-title {
     top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 900px) {
-  .container {
-    min-width: 860px;
-  }
   .home-page-title {
     top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 800px) {
-  .container {
-    min-width: 760px;
-  }
   .home-page-title {
     top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 700px) {
-  .container {
-    min-width: 660px;
-  }
   .home-page-title {
     top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 600px) {
-  .container {
-    min-width: 560px;
-  }
   .home-page-title {
     top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 500px) {
-  .container {
-    min-width: 480px;
-  }
   .home-page-title {
     top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 400px) {
-  .container {
-    min-width: 380px;
-  }
   .home-page-title {
     top: 0px;
     right: 13%;
   }
 }
 @media only screen and (max-width: 300px) {
-  .container {
-    min-width: 290px;
-  }
   .home-page-title {
     top: 0px;
     right: 13%;
