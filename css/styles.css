@@ -653,11 +653,19 @@ li {
     top: 0px;
     right: 13%;
   }
+  .caruosel-img {
+    width: 100vw;
+    height: 50vh;
+  }
 }
 @media only screen and (max-width: 600px) {
   .home-page-title {
     top: 0px;
     right: 13%;
+  }
+  .caruosel-img {
+    width: 100vw;
+    height: 40vh;
   }
 }
 @media only screen and (max-width: 500px) {
