@@ -1,0 +1,52 @@
+.founders__page-list {
+  margin-bottom: 70px;
+}
+
+.founders__link {
+  display: flex;
+}
+
+.founders__link-item {
+  display: block;
+  width: 119px;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AEC5CE;
+  background: #7F2941;
+}
+
+.bg-img {
+  background-image: url(../images/news_detailed_bg.png);
+}
+
+.founders__link-item:hover {
+  background: #AEC5CE;
+  color: #fff;
+}
+
+.founders-page__person-img {
+  width: 100%;
+  height: auto;
+}
+
+.person-name {
+  padding: 30px 0;
+  font-size: 41px;
+  line-height: 48px;
+  color: #59595C;
+}
+
+@media only screen and (max-width: 400px) {
+  .person-name {
+    font-size: 36px;
+  }
+  .founders__link-item {
+    width: 69px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=founders.css.map */

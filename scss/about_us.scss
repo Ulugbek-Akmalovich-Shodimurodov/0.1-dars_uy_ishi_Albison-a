@@ -3,6 +3,8 @@
 .pages-navbar{
     position: fixed;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: $main-color;
     padding: 10px 20px;
     height: 80px;
@@ -26,8 +28,8 @@
 }
 
 .about-bariatric{
-    width: 65%;
-    height: 637px;
+    width: 75%;
+    // height: 937px;
     margin-top: 150px;
     background: #FFFFFF;
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
@@ -39,10 +41,169 @@
     justify-content: center;
     align-items: center;
 }
-.current-page__link-list:nth-child(2n-1)::before{
-    content: '';
-    width: 2px;
-    height: 10px;
-    opacity: 1;
-    background: #000;
+.current-page__body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.current-page__link-list{
+    width: 25%;
+    margin-top: 20px;
+}
+
+.current-page__item-link{
+    padding: 20px;
+    text-decoration: none;
+    color: $main-color;
+    font-size: 15px;
+}
+.current-page__information{
+    width: 72%;
+    margin-left: 3%;
+    padding: 20px;
+}
+.title__h3{
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 50px;
+    color: $main-color;
+}
+.current-page__text{
+    padding: 20px 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $main-bg-color;
+}
+.title__h4{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 64px;
+    color: $main-color;
+}
+.card__sertifikat{
+    width: 30%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .about-bariatric{
+        width: 80%;
+        margin-top: 110px;
+
+    }
+
+   
+}
+@media only screen and(max-width: 992px) {
+
+    .burger{
+        width: 18px;
+        height: 18px;
+    }
+
+    .about-bariatric{
+        width: 80%;
+        margin-top: 85px;
+
+    }
+    .current-page__item-link{
+        padding: 10px;
+        font-size: 12px !important;
+    }
+    .card__sertifikat{
+        width: 80%;
+    }
+
+}
+@media only screen and(max-width: 767px) {
+
+    .burger{
+        width: 16px;
+        height: 16px;
+    }
+    .about-bariatric{
+        width: 85%;
+        margin-top: 65px;
+
+
+    }
+
+    .current-page__body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .current-page__link-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .current-page__information{
+        width: 96%;
+        margin: 10px 2%;
+        padding: 20px;
+    }
+    .title__h3{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .current-page__text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .title__h4{
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+}
+@media only screen and(max-width: 800px) {
+
+
+}
+@media only screen and(max-width: 768px) {
+
+
+    
+}
+@media only screen and(max-width: 600px) {
+    .title__h3{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .current-page__text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .title__h4{
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+
+}
+@media only screen and(max-width: 500px) {
+
+
+}
+@media only screen and(max-width: 400px) {
+
+    .about-bariatric{
+        width: 90%;
+        margin-top: 45px;
+
+    }
+
+    .current-page__item-link{
+        padding: 10px;
+        font-size: 8px !important;
+    }
+
+
 }

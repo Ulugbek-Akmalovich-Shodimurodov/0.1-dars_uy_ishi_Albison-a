@@ -115,6 +115,10 @@ li{
     height: 40px;
     margin-right: 30px;
 }
+#inp{
+    display: none;
+    // visibility: hidden;
+}
 
 .site-body{
     margin-top: 100px;
@@ -525,6 +529,9 @@ li{
 .bariartic-surgery__line{
     background: $main-bg-color ;
 }
+.line_color{
+    background: $main-color ;
+}
 
 .relevant-news__list{
     display: flex;
@@ -833,10 +840,15 @@ li{
     bottom: 5px;
     
 }
-.burger{
-    display: block;
-    background: transparent;
-}  
+.news-details__width{
+    width: 100% !important;
+}
+
+.blur{
+    width: 102%;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+}
+
 @media only screen and (max-width: 1200px) {
     .nav-list{
         display: none;
@@ -844,6 +856,7 @@ li{
     .burger{
         display: block;
     }  
+
     .menu-contact{
         flex-direction: row;
     }
@@ -860,10 +873,7 @@ li{
         margin: 10px;
     }
 
-
-
-
-    
+   
 }
 @media only screen and(max-width: 1000px) {
 
@@ -878,10 +888,16 @@ li{
     .relevant-news__card{
         width: 70%;
     }
+    .blur{
+        width: 103%;
+    }
 
 }
 @media only screen and(max-width: 900px) {
 
+    .blur{
+        width: 104%;
+    }
 
 }
 @media only screen and(max-width: 800px) {
@@ -923,6 +939,9 @@ li{
 
     }
 }
+.blur{
+    width: 105%;
+}
     
 }
 @media only screen and(max-width: 600px) {
@@ -942,6 +961,9 @@ li{
     .site__year{
         font-size: 14px;
     }
+    .blur{
+        width: 106%;
+    }
 
 }
 @media only screen and(max-width: 400px) {
@@ -956,7 +978,7 @@ li{
     .site__year{
         font-size: 10px;
     }
-}
-@media only screen and(max-width: 300px) {
-
+    .massenger__text{
+        font-size: 12px;
+    }
 }

@@ -124,6 +124,10 @@ li {
   margin-right: 30px;
 }
 
+#inp {
+  display: none;
+}
+
 .site-body {
   margin-top: 100px;
   font-family: "cormorant", "Arial", sans-serif;
@@ -534,6 +538,10 @@ li {
   background: #AEC5CE;
 }
 
+.line_color {
+  background: #7F2941;
+}
+
 .relevant-news__list {
   display: flex;
   flex-wrap: wrap;
@@ -867,9 +875,13 @@ li {
   bottom: 5px;
 }
 
-.burger {
-  display: block;
-  background: transparent;
+.news-details__width {
+  width: 100% !important;
+}
+
+.blur {
+  width: 102%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -905,6 +917,14 @@ li {
   .relevant-news__card {
     width: 70%;
   }
+  .blur {
+    width: 103%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .blur {
+    width: 104%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .caruosel-img {
@@ -936,6 +956,9 @@ li {
   .massenger-list__item img a {
     font-size: 10px;
   }
+  .blur {
+    width: 105%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .caruosel-img {
@@ -951,6 +974,9 @@ li {
   .site__year {
     font-size: 14px;
   }
+  .blur {
+    width: 106%;
+  }
 }
 @media only screen and (max-width: 400px) {
   .bariartic-surgery__title {
@@ -961,5 +987,8 @@ li {
   }
   .site__year {
     font-size: 10px;
+  }
+  .massenger__text {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=styles.css.map */
